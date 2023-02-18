@@ -9,6 +9,10 @@ def matches_condition(n: int) -> bool:
 
 
 def main():
+    """
+    A farmer invests 1770 gold talers to buy horses and cows. A horse costs
+    31 gold talers and a cow 21 gold talers. How many horses and cows can he buy?
+    """
     combinations = []
     for i in tqdm(range(100)):
         for j in range(100):

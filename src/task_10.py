@@ -21,6 +21,11 @@ def generate_array(seed: int, max: int, size: int = 11) -> list:
 
 
 def main():
+    """
+    11 (not necessarily different) integers are written on a board. Is it 
+    possible that the product of any five numbers on the board is greater 
+    than the product of the remaining numbers?
+    """
     matched = []
     for i in tqdm(range(10**8)):
         numbers = generate_array(i, 4)

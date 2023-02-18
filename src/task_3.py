@@ -11,7 +11,7 @@ def is_prime(i: int) -> bool:
     return True
 
 
-def calculate_primes(end: int) -> bool:
+def calculate_primes(end: int) -> None:
     for i in tqdm(range(2, end)):
         if is_prime(i):
             PRIMES.append(i)
@@ -25,6 +25,12 @@ def matches_condition(n: int) -> bool:
 
 
 def main():
+    """
+    The French mathematician De Bouvelle proved incorrectly in 1509 that
+    for all n ∈ N one of the numbers 6n - 1 or 6n + 1 is a prime number.
+    1. Give an example that shows that he was wrong.
+    2. Show that there are infinitely many n ∈ N that disprove this statement.
+    """
     matched = []
     for i in tqdm(range(2, 10 ** 2)):
         if matches_condition(i):
