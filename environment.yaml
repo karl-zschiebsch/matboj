@@ -1,0 +1,6 @@
+name: lsgm
+dependencies:
+  - pip
+  - python
+  - pip:
+    - tqdm
